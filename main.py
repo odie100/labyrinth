@@ -15,7 +15,7 @@ FPS = 60
 class Square():
 
     border_size = 3
-    color = random_color()
+    
 
     def __init__(self,x,y,width,surface,state):
         self.x = x
@@ -23,6 +23,7 @@ class Square():
         self.width = width
         self.surface = surface
         self.state = state
+        self.color = random_color()
     
     def change_color(self):
         return(255,255,255)
