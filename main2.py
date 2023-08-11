@@ -40,11 +40,11 @@ def draw_grid():
 
 def draw_horizontal_wall(cell):
     x,y = cell
-    pygame.draw.line(SCREEN,(0,random.randrange(50,255),0),(x*CELL_SIZE,y*CELL_SIZE+CELL_SIZE),((x+1)*CELL_SIZE,y*CELL_SIZE+CELL_SIZE),6)
+    pygame.draw.line(SCREEN,random_color(),(x*CELL_SIZE,y*CELL_SIZE+CELL_SIZE),((x+1)*CELL_SIZE,y*CELL_SIZE+CELL_SIZE),6)
 
 def draw_vertical_wall(cell):
     x,y = cell
-    pygame.draw.line(SCREEN, (0,random.randrange(50,255),0),(x*CELL_SIZE+CELL_SIZE,y*CELL_SIZE),(x*CELL_SIZE+CELL_SIZE,(y+1)*CELL_SIZE),6)
+    pygame.draw.line(SCREEN, random_color(),(x*CELL_SIZE+CELL_SIZE,y*CELL_SIZE),(x*CELL_SIZE+CELL_SIZE,(y+1)*CELL_SIZE),6)
 
 def random_color():
     red = random.randint(0,255)
